@@ -1,0 +1,19 @@
+.pic1{
+    width: 200px;
+    /* vị trí bên phải */
+    float: right;
+}
+.pic2{
+    width: 200px;
+    /* vị trí bên trái */
+    float: left;
+}
+p:last-child{
+    
+    /* clear: left; */
+    clear: both;
+}
+body{
+    width: 500px;
+    height: 500px;
+}

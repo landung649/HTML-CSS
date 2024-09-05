@@ -1,0 +1,11 @@
+h6{
+    color: yellowgreen;
+}
+
+h1{
+    font-family: sans-serif; /*kiểu chữ*/
+    text-transform: lowercase;  /*viết hoa , thường*/
+    /* line-height: 1.2; khoảng cách giữa các dòng */
+    
+
+}

@@ -1,0 +1,230 @@
+li{
+    list-style-type: none;
+    margin-top: 4px;
+}
+.fa-solid{
+    color: palegreen;
+    margin-right: 4px;
+}
+.fa-plane{
+    color: #000;
+}
+.box{
+    /* quy định lặp ảnh */
+    height: 500px;
+    width: 100vw;
+   background-image:url(./anhla.png), url(./anhnen.jpg);
+
+   /* bỏ hiện thị hình nền */
+   /* background-image: none; */
+
+   /* h.nền ko lặp lại */
+   background-repeat: no-repeat;
+
+   /* h.nền lặp theo trục x */
+   background-repeat: repeat-x;
+
+   /* h.nền lặp theo trục y */
+   background-repeat: repeat-y;
+
+   /* h.nền lặp (mặc định) */
+   background-repeat: repeat;
+}
+.box1{
+    /* quy định vị trí ảnh */
+    width: 400px;
+    height: 200px;
+    border: 4px dotted rebeccapurple;
+    background-image: url(./husky-ngao-.jpg);
+
+    /* ảnh vừa khung hình ; nếu trống sẽ lặp lại */
+    background-size: contain;
+
+    /* ảnh vừa khớp, nhưng có thể mất 1 phần */
+    background-size: cover;
+
+    /* h.thị theo size tuỳ chỉnh */
+    /* background-size: 200px; */
+
+    /* rộng - cao (bị nén)*/
+    /* background-size: 100% 100%; */
+
+    /* điều hướng đến điểm ảnh muốn h.thị */
+    background-position:  right;
+    background-position:  bottom;
+    background-position:  bottom left;
+    background-position:  top left;
+    background-position:  center;
+
+    /* điều chỉnh ảnh theo trục x và y */
+    background-position: 0% 0%;
+    background-position: -50px 50px;
+    background-repeat: no-repeat;
+}
+
+/* dải màu */
+.cha{
+    height: 100px;
+    margin-bottom: 10px;
+}
+.con2{
+    background-image: linear-gradient( red, blue, green);
+}
+.con1{
+    /* điều hướng to... */
+    background-image: linear-gradient(to left, red, blue, green);
+
+}
+.con3{
+    /* điều hướng to... guy định màu chiếm bao nhiêu */
+    background-image: linear-gradient(to right, red 10%, blue, green 70%);
+}
+.con4{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.box2{
+    height: 300px;
+    background-image: url(./husky-ngao-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* khi kéo thanh cuộn thì ảnh cũng di theo */
+    background-attachment: fixed;
+}
+.divcon{
+    margin-top: 40px;
+    height: 200px;
+    width: 30%;
+    overflow: auto;
+    background-image: url(./husky-ngao-.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* ảnh cuốn theo chữ */
+    background-attachment: local;
+}
+
+
+.box3 {
+    width: 200px;
+    height: 200px;
+    background-image: url(./1.PNG);
+    border: 50px dotted red;
+    padding: 50px;
+
+    /* mặc định ; đổ full kích thước p.tử */
+    background-clip: border-box;
+
+    /* ảnh chỉ đổ phần padding */
+    background-clip: padding-box;
+
+    /* ảnh chỉ đổ phần content */
+    background-clip: content-box;
+  }
+  
+  /* làm chữ chuyển màu */
+  .text2l {
+    color: #00dbde;
+  }
+  
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    .text2l {
+      color: transparent;
+      background-color: #00dbde;
+      background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+
+  .box4 {
+    width: 200px;
+    height: 200px;
+    background-image: url(./bg/1.PNG);
+    border: 50px dotted red;
+    padding: 50px;
+    /* mặc định */
+    /* background-clip: content-box; */
+
+    /* từ đầu gốc của ảnh vào */
+    background-origin: padding-box;
+    /* ảnh từ border vào */
+    background-origin: border-box;
+    background-origin: content-box;
+
+  /* đi từ tâm đi ra */
+    background-clip: border-box;
+    background-clip: padding-box;
+    background-clip: content-box;
+  }
+  
+  .box {
+    /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+    width: 200px;
+    height: 200px;
+    border: 50px dotted rgb(64, 255, 0);
+    padding: 50px;
+  
+    /* background-color: cyan; */
+    /* background-image: url(./bg/1.PNG); */
+    /* background-position : VỊ TRÍ BẮT ĐẦU ĐẶT ẢNH */
+    /* background-position: top right;
+    background-position: top left;
+    background-position: bottom left;
+    background-position: bottom right;
+    background-position: left;
+    background-position: right;
+    background-position: top;
+    background-position: bottom;
+    background-position: center; */
+  
+    /*  background-position : ĐƠN VỊ % */
+    /* background-position: 0 100%; */
+    /*  background-position : ĐƠN VỊ TUYỆT ĐỔI*/
+    /* background-position: 0 100px; */
+  
+    /* background-size: mặc định hiển thị ảnh theo kích thước thật , tỷ lệ 1:1  */
+    /* background-size: contain; */
+    /* background-size: cover; */
+  
+    /*  background-repeat: */
+    /* background-repeat default*/
+    /* background-repeat: repeat; */
+    /* background-repeat: no-repeat; */
+  
+    /*background-origin Xác định gốc bức ảnh đặt ở vị trí nào*/
+    /* background-origin: padding-box; */
+    /* background-origin: border-box; */
+    /* background-origin: content-box; */
+  
+    /* background-clip */
+    /*ảnh đổ từ border hất vào trong mặc định*/
+    /* background-clip: border-box; */
+    /*ảnh đổ từ padding hất vào trong*/
+    /* background-clip: padding-box; */
+    /*ảnh đổ phần content*/
+    /* background-clip: content-box; */
+  
+    /* background-attachment: mặc định ảnh bị cuốn theo thanh cuộn */
+    /* background-attachment: scroll; */
+    /* background-attachment: fixed ảnh cố định khi kéo scroll */
+    /* background-attachment: fixed; */
+    /* background-attachment: ảnh cố định khi kéo scroll trong box con */
+    /* background-attachment: local; */
+  
+    /* background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; */
+  
+    background: red;
+    background: red url(./bg/1.PNG);
+    background: red url(./bg/1.PNG) left;
+    background: red url(./bg/1.PNG) left / contain;
+    background: red url(./bg/1.PNG) left / cover no-repeat;
+    background: red url(./bg/1.PNG) left / cover no-repeat padding-box;
+    background: red url(./bg/1.PNG) left / cover repeat padding-box border-box;
+    background: red url(./bg/1.PNG) left / cover repeat padding-box border-box
+      fixed;
+  }
+  

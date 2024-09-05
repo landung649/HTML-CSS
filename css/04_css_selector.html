@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./04_css_selector.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- gg: css selector > xem cách css sao cho đúng -->
+
+    <!-- id và class :ko đc đặt bắt đầu bằng số -->
+     <p class="d1"> class đc tái sử dụng nhiều lần  </p>
+     <p id="d2"> id là duy nhất, ko đc đặt trùng</p>
+
+              <!-- kết hợp selector -->
+     <!-- *selector - chọn tất cả element -->
+     <!-- element.class ; h3.demo - chọn all thẻ h3, có class là demo-->
+      <h3>thẻ 2</h3>
+      <h3 class="demo">thẻ demo</h3>
+
+      <!-- element, element ; h1,p,.demo - áp dụng cho bộ chọn đc liệt kê, mỗi bộ chọn đc cách nhau bởi dấu phẩy -->
+       <p class="bc1">thẻ p</p>
+       <p id="bc2">thẻ p</p>
+       <h6 >thẻ h6</h6>
+
+       <!-- .demo.demo1 - áp dụng đúng cho class có 2 tên là .demo.demo1  -->
+
+       <!-- element element; div p - áp dụng toàn bộ thẻ p, miễn là cấp dưới của div sẽ đc áp dụng  ;;; gõ nhanh div.cha>p*3{đoạn văn $}  -->
+        <div class="cha">
+            <p>p là con của div </p>
+          <em>  
+            <p>p là cháu của div </p>
+          </em>
+        </div>
+
+        <!-- element>element ; div>p - chọn all thẻ p, nhưng phải là con trực tiếp thẻ div -->
+
+        <!-- element+element ; h1+h2 - áp dụng thẻ h2 đầu tiên ngay sau thẻ h1  -->
+         <h1 class="t1">tuổi trẻ</h1>
+         <h2>cần nỗ lực 100 lần</h2>
+         <h2>ko lm vậy mày còn có j</h2>
+
+         <!-- element1~element2 ; p~a - chọn all thẻ a nằm sau thẻ p -->
+        <div class="v1"><p>kkkkkkkkkkk1</p></div>
+        <div class="v2"><p>kkkkkkkkkkk2</p></div>
+
+
+        <!--   
+        - Mức độ ưu tiên: mạnh -> yếu
+     1. !important
+     2. Inline style (viết trên code html)
+     3. ID (#) Selector
+     4. Class(.) hoặc Pseudo-class(:) Selector
+     5. element Selector (h1, p, li,...)
+     6. Universal Selector (*) bộ trọn chung -->
+</body>
+</html>

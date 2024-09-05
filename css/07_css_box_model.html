@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./07_css_box_model.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+      +> BOX MODEL - mô hình hộp css- hộp chữ nhật 
+                Nội dung(width, height) ->hình ảnh, text ,,,..
+                padding -> khoảng đệm nội dung và viền 
+                border -> viền của phần tử  
+                margin -> khoảng cách giữa các phần tử trên trang
+                    *** margin collapse: là hiện tượng chồng lặp 2 thuộc tính margin khi 2 p.tử liền kề cùng thiết lập margin với p.tử còn lại theo chiều dọc, chỉ chiều dọc mới bị.
+                                             khắc phục: margin 1 thằng thôi
+                                         - xảy ra vs p.tử cha con, khi margin ông con thì ông cha cũng bị kéo đi ( để sửa :  display:flex;  fex-direction:column)
+                       
+
+       +; Kích thước cao * rộng 1 phần tử = content + padding + border (ko bao gồm margin)
+
+              -; border: 10px solid blue;
+                
+             gg: css border - để xem nhiều kiểu viền khác nữa
+                
+                 +; border-radius: 10px; bo góc
+                                
+
+        -; Outline: là dường bao quanh mép ngoài cùng của đối tượng;
+                     ko làm tăng kích thước ptu; 
+                     nó chỉ là vùng bên ngoài, 
+                     chiếm cả phàn margin.
+                - ko có đối số 4 chiều
+                             
+ -->
+<div class="d1">css padding</div> <br> <br>
+<div class="d2">css border <br> border-radius</div>
+<div class="d3">css margin</div> <br><br>
+<div class="d4">css outline</div> <br> <br>
+
+
+<h1>bài tập</h1>
+<div class="box box1">số 1</div>
+<div class="box box2">số 2</div>
+<div class="box box3">số 3</div>
+<div class="box box4">số 4</div>
+<div class="box box5">số 5</div>
+<div class="box box6">số 6</div>
+<div class="box box7">số 7</div>
+<div class="box box8">số 8</div>
+
+<!-- box-sizing:content-box(mặc định sẵn) và border-box  - dự án thực tế, ta sử dụng border-box nhiều hơn, để kích thước khớp với thiết kế, trách phải tính toán phần nội dung -->
+<div class="nd-box"></div>
+</body>
+</html>

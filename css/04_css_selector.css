@@ -1,0 +1,34 @@
+.d1{/*class*/
+    color: aqua; 
+}
+#d2{/*id*/
+    color: brown; 
+}
+*{ /* *selector */
+    font-size: 20px;
+}
+h3.demo{  /*element.class*/
+    color: cadetblue;
+}
+
+/* element,element */
+.bc1,#bc2,h6{
+    color: #000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Space selectors */
+.cha p{
+    color: #edf108;
+
+}
+
+/* element+element */
+.t1+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*  element1~element2 */
+.v1~.v2{
+    color: darksalmon;
+}

@@ -1,0 +1,29 @@
+/* tạo biến đếm, reset nó = 0 */
+.box{
+    counter-reset: section;
+    padding-left: 30px;
+    background-color: aqua;
+}
+
+/* tăng biến đếm lên 1 */
+h2{
+    counter-increment: section;
+
+    /* tạo biến đếm, reset biến đếm thẻ h3 về 0 sau thẻ h2*/
+    counter-reset: the_h3;
+}
+
+/* chèn text vào giá trị biến đếm */
+h2::before{
+    content: "Phần " counter(section) ": ";
+    color: red;
+}
+
+h3{
+    counter-increment: the_h3;
+    padding-left: 30px;
+}
+h3::before{
+    content: counter(section) "."counter(the_h3)" ";
+    color: rgb(38, 0, 255);
+}

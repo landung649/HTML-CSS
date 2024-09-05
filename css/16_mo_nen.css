@@ -1,0 +1,13 @@
+body{
+   
+    background-image: url(./husky-ngao-.jpg);
+    background-size: cover;
+
+}
+.box{
+    background-color: red;
+    margin-top: 50px;
+    height: 100px;
+    /* làm mờ , ko hỗ trợ all t.duyệt */
+    backdrop-filter:blur(5px) ;
+}

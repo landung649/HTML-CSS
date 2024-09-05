@@ -1,0 +1,74 @@
+.content{
+    background-color: rgb(247, 159, 44);
+    width: 400px;
+    margin: 40px;
+    margin-top: 100px;
+
+    position: relative;
+}
+.box{
+    height: 100px;
+    width: 100px;
+
+    /* căn giữa text trong khối */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    background-color: aqua;
+
+    /* g.trị mặc định */
+    /* position: static; */
+}
+.box2{
+    background-color: rgb(162, 0, 255);
+
+    /* cách vị trí ban đầu theo 4 hướng theo 1 khoảng mà ta đặt */
+    /* position: relative;
+    left: 50px;
+    top: 50px; */
+
+    /* đưa khối rời chỗ thực sự , nhìn như lớp trên và lớp dưới*/
+    /* position: absolute;
+    left: 0;  
+    top: 0; */
+
+    /* p.tử đặt theo tổ tiên gần nhất đc dặt là:  position: relative;  */
+    position: absolute;
+    left: 200px;  
+    top: 0;
+}
+.box3{
+    background-color: rgb(255, 55, 0);
+}
+h1{
+    background: rgb(8, 254, 8);
+}
+.mas-bottom{
+    font-size: 40px;
+    color: #0095ff;
+
+    /* p.tử sẽ đc đóng băng */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.nav{
+    background: rebeccapurple;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    /* áp dụng 4 đ.số */
+    /* inset: 50px 100px 50px; */
+}
+.nav li{
+    display: inline-block;
+}
+.nav a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+}

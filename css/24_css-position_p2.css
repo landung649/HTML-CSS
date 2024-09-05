@@ -1,0 +1,40 @@
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* xếp chồng lên nhau theo thứ tự */
+    position: absolute;
+    
+}
+.box1{
+   width: 300px;
+   height: 300px;
+   background-color: red; 
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 0); 
+
+    /* đưa lên mà ko tuân theo thứ tự hay đưa khối nào lên trên trước thì sử dụng z-index */
+    z-index: 1;
+ }
+ .box3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 64); 
+ }
+
+ h2{
+    background: yellow;
+
+    /* khi gần điểm chạm mới đổi vùng tiếp theo */
+    position: sticky;
+    top: 0;
+ }
+ .content2{
+    width: 400px;
+    height: 500px;
+    overflow: auto;
+    background: blanchedalmond;
+}

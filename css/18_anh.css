@@ -1,0 +1,15 @@
+.box1{
+    min-width: 700px;
+    background-color: aqua;
+}
+.demo1{
+    /* co bức ảnh khi thu nhu nhỏ trình duyệt */
+    min-width: 80%;
+
+    /* căn giữa ảnh trong box chứa nó */
+    display: block;
+    margin: 0 auto;
+
+    /* ko cho tác tác chuột ; áp dụng cho ảnh , link */
+    pointer-events: none;
+}

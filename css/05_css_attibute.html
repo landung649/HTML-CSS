@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./05_css_attibute.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- [attribute] ; [href] - chọn all thuộc tính (property): href -->
+     <a href="">ck1</a>
+     <a href="">ck2</a>
+     <p href="">Lorem ipsum dolor sit amet.</p>
+
+    <!--  [attribute=value] ; [target="_blank"] - chọn thuộc tính có chính xác giá trị: target="_blank" -->
+      <a href="https://autoprefixer.github.io/"target="_blank">văn bản 1</a>
+      <a href="https://autoprefixer.github.io/">văn bản 2</a>
+
+      <!-- [attribute~=value] ; [title~="pic"] - chọn tất cả thuộc tính : title có chứa từ pic trong giá trị -->
+      <a href="https://autoprefixer.github.io/" title="pic">văn bản 2</a>
+
+       <!-- [attribute*=value];  [title*="pic"] - chọn all chuỗi có pic -->
+      <a href="https://autoprefixer.github.io/" title="khgfpic45viuytreewsdf">văn bản 3</a>
+        
+        <!-- [attribute|=value] ; [title|="pic"] - title có từ duy nhất , bắt đầu từ pic: pic, pic-123  -->
+      <a href="https://autoprefixer.github.io/">văn bản 2</a>
+
+      <!-- [attribute^=value] ; [title^="pic"]  miễn title bắt đầu bằng từ pic (ko quan tâm vế đằng sau)-->
+
+      <!-- [attribute$=value] ; [title$="1"] - title kết thúc bằng kí tự 1 (kết thúc bằng gì cũng đc)  -->
+      <a href="https://autoprefixer.github.io/" title="adb fghhj 1">văn bản 2</a>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
++; clone 1 project sẵn 
+        chuột phải vào chỗ muốn lưu -> chọn git bash here -> git clone link (link clone trên gg)
+        kéo tệp/mục sang kho github để up nhanh
+
++; remote repo: máy chủ của git lưu trữ các file dự án của bạn 
+        -; vào github tạo kho / new... -> nhập tên dự án ; tạo fodel ở ngoài
+        -; mở visual studio code > open fodel ; mở terminal/ new terminal ; 
+           ban đầu ở chế độ powerbell -> kích mũi xuống, chọn Select ...-> git bash -> kích vào thùng rác để xoá terminal cũ -> mở lại new terminal
+
++; câu lệch :
+        .; confix tài khoản: coppy dòng lệnh user.email , nhập email đky github; coppy lệnh uer.name, tự đặt tên 
+        .; git status (ktra hiện trạng file)
+
+        1; git init  (khởi tạo gỉt)
+        2; git add . (add tất cả) / git add ten_thu_muc (add lẻ mục, tệp)
+        3; git commit -m "nội dung"
+        4; git branch -M main  (thay đổi tên nhánh)
+        5; git remote add origin https.... (cho bt dự án sẽ lưu tới địa chỉ nào)
+        6; git push -u origin main (đẩy lên github)     ;  lần đầu đẩy cần xác nhận ....
+                vào setting -> pages -> tìm branch , chọn main -> save
+
+
+*** Trường hợp sửa code ***
+        1; git add . (git add tên)
+        2; git commit -m "tiêu đề"
+        3; git push
+
+*** Trường hợp sửa code, có file mới ***
+        1; git add .
+        2; git commit -m "..."
+        3; git push
+         (hoặc ấn vào biểu tượng chia nhánh thanh công cụ bên trái, ấn dấu + để add tất cả hay từng file vào git ; gõ tiêu đề trên ô commit, ấn commit 
+                                -> ấn Sync Changes để push luôn / kích 3 chấm ngay trên, chọn push để đẩy lên)
+
+        có thể gõ tiêu đề rồi commit ok -> ấn Sync Changes là add đồng loạt
+
+
+

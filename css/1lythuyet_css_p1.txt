@@ -1,0 +1,114 @@
+***THUỘC TÍNH CSS CƠ BẢN***
+                gg: css reference w3c để tra các thuộc tính css
+    - Mức độ ưu tiên: mạnh -> yếu
+     1. !important
+     2. Inline style (viết trên code html)
+     3. ID (#) Selector
+     4. Class(.) hoặc Pseudo-class(:) Selector
+     5. element Selector (h1, p, li,...)
+     6. Universal Selector (*) bộ trọn chung
+
+***tra TL***
+        tìm thuộc tính : css reference w3c ; ctrl + f để tìm cụ thể
+        /đọc phím tắt trên vcode  - file>pred...>keyboad ...
+
+     
+
+        CSS PREFIX : tiền tố prefix hỗ trợ all trình duyệt; gg : auto prefix > github.io
+
+*** Thuộc Tính Cơ Bản ***
+    opacity - độ trong suốt chữ và nền (0% -> 100%) mờ -> rõ nhất. vd; opacity: 50%;
+    display: none; - mất hẳn ptu đó trên g diện
+    visbility: hidden; - ẩn khỏi g diện và ko tương tác đc
+
+    gắn logo trang web : (link:favicon) 
+
+    CSS Selectors
+   +; id: chỉ có 1 duy nhất
+                gõ h1#demo0
+   +; class: sd đc nhiều lần
+                gõ h3.demo.demo1
+   +; *Selector - chọn tất cả element ; *{ thuộc tính;}
+   +; element.class - chọn all thẻ h2 có tên class là demo; h2.demo{color: red;}
+   +; element, element | h1,h2,p{ color: red} | p, .demo, #demoid {...}
+   +; .class.class | .dv1.dv2 {...}
+   +; space Selectors | div p {...} | .dv1 p {...}
+   +; element>element | div>p chọn all con trực tiếp thẻ  div
+   +; element+element - chọn 1 thẻ sát ngay sau
+   +; ~Selectors - chọn all các thẻ sau nó | h1~h3 {...}
+        sáng tạo kết hợp tuỳ thích
+
+  +; Attribute Selectors - [Attribute] | [href]{...} : chọn all thuộc tính href | a[href]{...} : chọn all href của thẻ a
+                       - [Attribute=value] | [target="_blank"] {...} :chọn chính xác thuộc tính có giá trị target="_blank".
+                                               [title = "tuhoc"] {...} : chọn all thuộc tính title có chứa từ tuhoc
+                                                   a[title = "tuhoc"][title="ban"] {...} áp dụng các từ trên thẻ a
+                                                [Attribute*=value]{...} chọn all value miễn là giá trị đó, ko quan trọng thừa chữ hay ko ; [title*="pic"]{...}
+                                                [Attribute|=value]{...}chọn all giá trị duy nhất hoặc giá trị đứng đầu kèm theo dấu gạch nối như pic-123 ...
+                                                [Attribute^=value]{...}chọn all giá trị bắt đầu mà ko quan tâm đằng sau như pic3,pic12eg,pic sp4, pic-gdgf ... miễn giá trị đó đứng đầu
+                                                [Attribute$=value]{...}chọn all chuỗi hoặc ký tự kết thúc 
+                                                
+
+   +; PSEUDO-CLASSES
+            1; p:hover   chọn các thẻ p khi di chuột qua 
+            2; a:active   chọn các thẻ a khi nhấn giữ chuột
+            3; a:link   chọn các thẻ a có liên kết chưa click vào
+            4; a:vitited   chọn các thẻ a có liên kết chưa click vào
+            5; div:empty  chọn các thẻ div ko có nội dung 
+            6; #home:target  chọn thẻ có id="home" khi trên URL có hash tương ứng.
+
+                cú pháp;    Selector:Pseudo-classes{
+                                 color:red;
+                            }
+    
+            7; p:first-child  chọn các thẻ p là thẻ con đầu tiên
+            8; p:last-child  chọn các thẻ p là thẻ con cuối cùng
+            9; p:nth-child(2)  chọn các thẻ p là thẻ con thứ hai, từ trên xuống; odd (nhảy theo n lẻ) ; even (nhảy theo n chẵn) ; 2n+1 (nhảy theo step mong muốn)
+            10; p:nth-last-child(2)  chọn các thẻ p là thẻ con thứ hai, tính từ cuối lên ;  odd (nhảy theo n lẻ) ; even (nhảy theo n chẵn) ; 2n+1 (nhảy theo step mong muốn)
+            11; p:only-child(2)  chọn các thẻ p là thẻ con duy nhất
+            
+            12; p:first-of-type   chọn các thẻ p xuất hiện đầu tiên trong thẻ cha 
+            13; p:last-of-type   chọn các thẻ p xuất hiện cuối cùng trong thẻ cha 
+            14; p:nth-of-type(2)  chọn các thẻ p xuất hiện thứ 2 trong thẻ cha; odd (nhảy theo n lẻ) ; even (nhảy theo n chẵn) ; 2n+1 (nhảy theo step mong muốn)
+            15; p:nth-last-of-type(2)  chọn các thẻ p xuất hiện thứ 2 trong thẻ cha, tính từ cuối lên; odd (nhảy theo n lẻ) ; even (nhảy theo n chẵn) ; 2n+1 (nhảy theo step mong muốn)
+            16; p:only-of-type    chọn các thẻ p xuất hiện duy nhất trong thẻ cha
+            17; .top:not(p)  chọn các thẻ có class="top" loại trừ thẻ p
+            ----------- có thể kết hợp như .top:not(:first-of-type){...} chọn các ptu có class là top , trừ thẻ xuất hiện lần đầu ------------------------
+
+    list-style:none; - loại dấu chấm ds thẻ li
+    user-select: none; - ko cho coppy 
+
+
+        +> BOX MODEL - mô hình hộp css- hộp chữ nhật 
+                Nội dung(width, height) ->hình ảnh, text ,,,..
+                padding -> khoảng đệm nội dung và viền 
+                border -> viền của phần tử  
+                margin -> khoảng cách với các phần tử liền kề khác
+
+              *  Padding
+                . mẹo:  padding: 20px 10px; //trên dưới, trái phải
+                        padding: 20px 10px; //trên dưới, trái phải
+                        padding: 20px 10px 40px 70px; //trên, phải, dưới, trái
+
+              -; border: 10px solid blue;
+                 border-width:...(mẹo) độ rộng
+                 border-style:..(mẹo) kiểu viền
+                        . Một số viền thay cho solid
+                        dashed đường nét đứt
+                        ........
+
+                        +; border-radius: 10px; bo góc
+                                border-top-left-radius:10px; bo góc trên trái
+                                border-top-right-radius:10px; bo góc trên phải
+                                border-bottom-right-radius:10px; bo góc dưới phải
+                                ....(mẹo)....
+
+                -; Outline: là dường bao quanh mép ngoài cùng của đối tượng; ko làm tăng kích thước ptu; nó chỉ là vùng bên ngoài, chiếm cả phàn margin
+                               - ko có (mẹo) 
+
+*** CÂU LỆNH hay ***
+body{
+    background-image: url(./img/bg.jpg);  // hình nền
+}
+a{nội dung}
+ul>li*3>a{nội dung}
+h2#id{nội dung}

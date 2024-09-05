@@ -1,0 +1,77 @@
+*{
+    font-size: 1.5rem;
+}
+.content{
+    display: flex;
+    height: 300px;
+
+    /* justify-content: start; */ /*dồn về đầu hàng*/
+    /* justify-content: end; */   /*dồn về cuối hàng*/
+    /* justify-content: center; */  /*dồn ra giữa*/
+    background-color: aqua;
+    /* justify-content: space-between; */  /*cách p.tử đều nhau nhưng 2 p.tử ngoài cùng sẽ sát lề*/
+    /* justify-content: space-around; */  /*cách p.tử đều nhau nhưng 2 p.tử ngoài cùng sẽ cách = nửa k.cách các p.tử*/
+     justify-content: space-evenly;  /*cách p.tử đều nhau tính cả 2 bên lề */
+
+   /* align-items: stretch; */  /* mắc định giãn theo box1*/
+   /* align-items: start; */  /*dồn các p.tử đầu cột */
+   /* align-items: end; */   /*dồn các p.tử CUỐI cột */
+   /* align-items: center; */ /*dồn các p.tử giữa cột */
+   /* align-items: baseline; */ /*... */
+}
+
+.box{
+    background-color: blue;
+}
+.box1{
+    height: 200px;
+}
+/* --------------------------------------------------------- */
+.content1{
+    height: 400px;
+    display: flex;
+    background-color: blueviolet;
+
+    /* xuống hàng */
+    flex-wrap: wrap;
+
+    /* xuống hàng, đảo ngược vị trí */
+    /* flex-wrap: wrap-reverse; */
+
+    /* các p.tử sẽ bị giãn to mặc định theo thằng cha */
+    /* align-content: stretch; */
+
+    /* các p.tử sẽ dồn lên đầu hay cuối và căn giữa */
+    /* align-content: start; */
+    /* align-content: end; */
+    /* align-content: center; */
+
+    /* k.trống cách hàng p.tử bằng nhau 2x và cách lề 1x */
+    /* align-content: space-around; */
+
+    /* k.trống cách hàng p.tử đều nhau và sát lề */
+    align-content: space-between;
+    
+}
+.hop{
+    width: 30%;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+/* =============================== */
+.cn{
+    background-color: blue;
+    border: 1px solid black;
+}
+.content2{
+    display: flex;
+    background-color: aqua;
+    /* mặc định */
+    /* flex-direction: row; */
+
+    /* đảo ngược , đổi hướng */
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+}

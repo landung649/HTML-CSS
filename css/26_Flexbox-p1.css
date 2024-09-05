@@ -1,0 +1,18 @@
+*{
+    font-style: 1.5rem;
+}
+.content{
+    /* chếm hết c.ngang của cha */
+    /* display: flex; */
+    
+    /* chiếm vừa vs n.dung */
+    display: inline-flex;
+    background-color: aqua;
+
+    /* phân cách các p.tử là 40px */
+    gap: 40px;
+}
+
+.box{
+    background-color: blue;
+}

@@ -1,0 +1,39 @@
+h1{
+    font-family: "Merienda", cursive; /*coppy từ google font*/
+    /* căn giữa  */
+    height: 120px;
+    background-color: aqua;
+    line-height: 110px;
+    text-align: center;
+}
+p{
+    
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5; /*khoảng cách dòng*/
+  font-weight: 400; /*độ dày chữ*/
+  letter-spacing: 8px; /*khoảng cách chữ*/
+  word-spacing: 10px; /*k.cách từ*/
+  text-align: justify; /*justify:căn 2 bên ; right :căn phải ; left:căn trái*/
+  text-indent: -20px; /*thụt lề*/
+}
+a{
+    text-align: center; /*căn giữa trong box chứa*/
+    /* muốn căn giữa thì ghi t.tính block để thẻ a chiếm hết c.ngang của p.tử cha nó */
+    display: block;
+
+    text-decoration: none; /*bỏ gạch chân*/
+    text-decoration: line-through;/*thêm gạch ngang*/
+    text-decoration: overline brown 5px; /*gạch trên đầu ; màu ; kích cỡ*/
+    
+}
+
+b{
+    /* viết hoa chữ cái đầu*/
+    text-transform: capitalize;
+
+    /* viết thường toàn bộ */
+    text-transform: lowercase;
+
+    /* viết hoa toàn bộ */
+    text-transform: uppercase;
+}

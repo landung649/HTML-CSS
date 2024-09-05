@@ -1,0 +1,34 @@
+.p1::first-line{
+    color: rgb(26, 145, 249)
+    ;
+}
+.p1::first-letter{
+    font-size: 50px;
+    color: aqua;
+}
+
+
+/* ko viết tên thẻ, sẽ đc hiểu là thẻ này áp dụng toàn bộ  */
+::selection{
+    background-color: brown;
+}
+li::marker{
+    font-size: 20px;
+    color: blueviolet;
+}
+.box1::before{
+content: "em ở đằng trước nè";
+color: cadetblue;
+font-size: 20px;
+}
+
+/* tạo khối */
+.box1::after{
+    display: block;
+    content: "";
+    width: 300px;
+    height: 5px;
+    background-color: coral;
+    border-radius: 999px;
+    border: 2px solid rebeccapurple;
+}

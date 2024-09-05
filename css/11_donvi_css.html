@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./11_donvi_css.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- gg: css units 
+     +; Đơn vị tuyệt đối(độ dài cố định): px 
+     +; Đơn vị tương đối(độ dài tuỳ p.tử cha): % ; 50vw(50% chiều rộng khung nhìn) ; 20vh(20% chiều cao khung nhìn);
+                        * muốn đặt chiều cao % p.tử con thì phải đặt % p.tử cha đã!!!!
+                        2em(kích thức gấp 2 lần font chữ hiện đại - có kế thừa)
+                        3rem - kichs thước gấp 3 lần font chữ root element (ko kế thừa)
+     -->
+     <div class="box">box
+        <div class="box-con">box con</div>
+     </div>
+
+     <!-- .prarent>p.line1+p.line2 -->
+     <div class="prarent">
+        <p class="line1">lan dung</p>
+        <p class="line2">lan dung</p>
+     </div>
+
+     <div class="khung-nhin">
+        <div class="khung-con"></div>
+     </div>
+
+     <div class="em-cha">
+        <div class="em-con">em</div>
+     </div><br>
+
+
+     <div class="ong-cha">
+        <div class="ong-con">em
+            <div class="ong-con">em
+                <div class="ong-con">em</div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

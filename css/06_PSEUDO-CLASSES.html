@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./06_PSEUDO-CLASSES.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- PSEUDO-CLASSES là 1 lớp giả đc sử dụng để định nghĩa 1 trạng thái đặc biệt của 1 ptu-->
+
+    <!-- :hover - chọn các thẻ khi di chuột qua  -->
+
+    <p>
+        Lorem ipsum dolor sit amet.
+    </p>
+    <b id="id">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, consequuntur.</b>
+
+    <!-- :active - chọn các thẻ khi giữ chuột -->
+     <p class="cl1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ab reiciendis vel perspiciatis culpa quia veritatis officiis corporis nostrum. Nesciunt magni nihil vitae veniam distinctio illum dicta perspiciatis numquam voluptatibus?</p>
+
+     <!-- :link - chọn các thẻ chưa click vào-->
+      <a href="https://autoprefixer.github.io/" class="mot">Lorem ipsum dolor sit.</a> <br>
+
+       <!-- :visied - chọn các thẻ đã click vào rồi-->
+       <a href="https://autoprefixer.github.io/" class="hai">Lorem ipsum dolor sit.</a>
+
+       <!-- :empty - tác động lên thẻ ko có nội dung bên trong, mất tác dụng khi có nội dung -->
+        <div class="kocogi"></div>
+
+        <!-- :target - tác động lên thẻ khi gọi đến và có cả dấu # trên url khi nhảy -->
+         <h1>nỗ lực 100%</h1>
+         <!-- ul>li*3>a{chuyển đến mở bài} -->
+         <ul>
+            <li>
+                <a href="#mobai">chuyển đến mở bài</a>
+            </li>
+            <li>
+                <a href="#thanbai">chuyển đến thân bài</a>
+            </li>
+            <li>
+                <a href="#ketbai">chuyển đến kết bài</a>
+            </li>
+         </ul>
+
+         <h2 id="mobai">mở bài</h2>
+         <p>
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iusto sequi tempore nobis veniam possimus labore sed quam porro excepturi itaque eius, laborum illum perspiciatis in facere aut repellat saepe.</span>
+           Iste nostrum unde distinctio? Omnis adipisci commodi dicta exercitationem, sapiente accusamus, animi officia error odio dolore in. Amet laboriosam necessitatibus ad, accusantium deleniti reprehenderit atque iste laudantium nemo voluptas quae?</span>
+         </p>
+
+         <h2 id="thanbai">thân bài </h2>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, delectus? Ratione repudiandae eveniet labore aspernatur, vel perferendis nisi fuga natus quidem impedit corrupti magni voluptate odio error explicabo voluptatibus deleniti!</span>
+               Totam quis consectetur modi. Nobis mollitia perspiciatis obcaecati vero nesciunt provident ea, nemo deleniti, ex ad ipsam veniam asperiores maiores voluptatem sint consequuntur, adipisci ullam fugiat quaerat. Neque, ea natus!</span>
+               Reprehenderit quos neque possimus porro quaerat excepturi enim laboriosam veritatis asperiores repellendus blanditiis, nulla sequi facere, esse fugiat recusandae itaque laudantium quidem magni. Aspernatur placeat ipsum dicta quia eligendi ab.</span>
+            </p>
+        
+        <h2 id="ketbai">kết bài
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque quam maxime, atque aut magni nemo amet placeat. Nostrum officia eveniet, sunt mollitia deleniti rerum laborum, impedit fugiat excepturi quia quibusdam.</p>
+
+            <!--    
+            7; p:first-child  chọn các thẻ p là thẻ con đầu tiên
+            8; p:last-child  chọn các thẻ p là thẻ con cuối cùng
+            9; p:nth-child(2)  chọn các thẻ p là thẻ con thứ hai, từ trên xuống; odd (nhảy theo n lẻ) ; even (nhảy theo n chẵn) ; 2n+1 (nhảy theo step mong muốn)
+            10; p:nth-last-child(2)  chọn các thẻ p là thẻ con thứ hai, tính từ cuối lên ;  odd (nhảy theo n lẻ) ; even (nhảy theo n chẵn) ; 2n+1 (nhảy theo step mong muốn)
+            11; p:only-child(2)  chọn các thẻ p là thẻ con duy nhất
+            
+            12; p:first-of-type   chọn các thẻ p xuất hiện đầu tiên trong thẻ cha, nó ko qtam thẻ nào trên nó
+            13; p:last-of-type   chọn các thẻ p xuất hiện cuối cùng trong thẻ cha ,  nó ko qtam thẻ nào dưới nó
+            14; p:nth-of-type(2)  chọn các thẻ p xuất hiện thứ 2 trong thẻ cha; odd (nhảy theo n lẻ) ; even (nhảy theo n chẵn) ; 2n+1 (nhảy theo step mong muốn)
+            15; p:nth-last-of-type(2)  chọn các thẻ p xuất hiện thứ 2 trong thẻ cha, tính từ cuối lên; odd (nhảy theo n lẻ) ; even (nhảy theo n chẵn) ; 2n+1 (nhảy theo step mong muốn)
+            16; p:only-of-type    chọn các thẻ p xuất hiện duy nhất trong thẻ cha, nó ko qtam thẻ khác
+            17; .top:not(p)  chọn các thẻ có class="top" loại trừ thẻ p
+            ----------- có thể kết hợp như .top:not(:first-of-type){...} chọn các ptu có class là top , trừ các thẻ xuất hiện lần đầu (tính trong khối) ------------------------
+ -->
+        </h2>
+</body>
+</html>

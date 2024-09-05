@@ -1,0 +1,31 @@
+p:hover{
+    color: blue;
+}
+
+#id:hover{
+    color: antiquewhite;
+    font-size: 15px;
+}
+
+.cl1:active{
+    color: rgb(145, 15, 15);
+    font-size: 25px;
+}
+
+.mot:link{
+    color: chartreuse;
+}
+
+.hai:visited{
+    color: cadetblue;
+}
+
+.kocogi:empty{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+
+h2:target{
+    color: darkorchid;
+}

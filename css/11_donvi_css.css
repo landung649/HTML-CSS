@@ -1,0 +1,57 @@
+body{
+    border-color: blue;
+    height: 500px;
+}
+.box{
+    background-color: aqua;
+    width: 50%;
+    height: 50%;
+}
+.box-con{
+    background-color: #eb0e0e;
+    width: 30%;
+}
+/* kich cỡ mặc định font-size : 16px*/
+.prarent{
+    font-size: 60px;
+}
+.line1{
+    font-size: 40%;
+}
+.khung-nhin{
+    width: 80vw;height: 80vh; background-color: yellow;
+}
+.khung-con{width: 50vw;height: 20vh; background-color: burlywood;}
+
+
+/* 1. thẻ cha và con ko có font size --> lấy font-size root(HTML) */
+.em-con{
+    font-size: 10px; /*3. đặt trực tiếp thẻ con*/
+    height: 10em;
+    width: 10em;
+    background-color: chocolate;
+}
+
+/* 2.thẻ cha có font-size tuyệt đối */
+.em-cha{
+    font-size: 30px;
+    font-size: 2em; /*4. 16*2 = 32px*/
+}
+
+.ong-cha{
+    font-size: 10px;
+}
+.ong-con{
+    /* 2*10=20px (*kích thước)= 40px
+      20*2(font-size)=40px (*kích thước)= 80px
+      ... khi dùng đ.vị em
+     */
+    font-size: 2rem; /* 16px*2=32px */
+    width: 2rem;
+    height: 2rem;
+    background-color: chartreuse;
+}
+/* thay đôi rem thì cần ghi đè t.tính font-size */
+html{
+    font-size: 30px;
+}

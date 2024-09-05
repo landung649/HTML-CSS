@@ -1,0 +1,12 @@
+/* [] */
+[href]{
+    color: red;
+}
+p[href]{
+    color: yellow;
+}
+
+/* [attribute=value] */
+[target="_blank"]{
+    color: aqua;
+}

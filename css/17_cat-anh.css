@@ -1,0 +1,34 @@
+.box1{
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 100px;
+    background: url(./husky-ngao-.jpg) center/cover;
+
+    /* cắt h.tròn */
+    clip-path: circle();
+    clip-path: circle(20%);
+
+    /* cắt h.đa giác */
+    clip-path: polygon(20% 0%, 26% 54%, 100% 100%, 0% 100%);
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+body{
+    width: 1200px;
+    height: 1200px;
+}
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    border: 5px red solid;
+    
+    /* đổ bóng : x y nhoè l.rộng màu*/
+    /* box-shadow: 12px 60px 6px 20px burlywood ; */
+
+    /* đổ bóng chính đối tượng */
+    /* box-shadow: inset 10px 35px 4px 50px yellow; */
+
+    /* đổ nhiều bóng */
+    box-shadow: 160px 0 green, 0 160px peru , 160px 160px rebeccapurple;
+}

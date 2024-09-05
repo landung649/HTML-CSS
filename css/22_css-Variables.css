@@ -1,0 +1,32 @@
+/* đặt tên biieesn từ gốc và áp dụng cho toàn trang*/
+:root{
+    --box-cao:100px;
+    --box-mau:rgb(243, 36, 13);
+    --box-cach-duoi:10px
+}
+.box1{
+    height: var(--box-cao);
+    background-color: var(--box-mau);
+    margin-bottom: var(--box-cach-duoi);
+}
+.box2{
+    height: var(--box-cao);
+    background-color: var(--box-mau);
+    margin-bottom: var(--box-cach-duoi);
+}
+.box3{
+    height: var(--box-cao);
+    background-color: var(--box-mau);
+    margin-bottom: var(--box-cach-duoi);
+}
+
+/* có thể đặt biến cho 1 vùng cụ thể để sử dụng và áp dụng cho thẻ con tại chính vùng đc gọi , nhưng chỉ có tác dụng tại vùng đó thôi*/
+.box4{
+    height: 100px;
+    --mau-nen:green
+}
+
+/* t.hợp dự phòng , khi biến bị lỗi thì giá trị thứ 2 sẽ thay thế vào */
+.box4{
+    background-color: var(--box-mau, blue);
+}
