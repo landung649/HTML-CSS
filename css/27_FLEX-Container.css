@@ -27,13 +27,13 @@
     height: 200px;
 }
 /* --------------------------------------------------------- */
-.content1{
+/* .content1{
     height: 400px;
     display: flex;
     background-color: blueviolet;
 
     /* xuống hàng */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
     /* xuống hàng, đảo ngược vị trí */
     /* flex-wrap: wrap-reverse; */
@@ -50,13 +50,22 @@
     /* align-content: space-around; */
 
     /* k.trống cách hàng p.tử đều nhau và sát lề */
-    align-content: space-between;
+    /* align-content: space-between; */
     
-}
+/* } */ 
 .hop{
     width: 30%;
     background-color: aquamarine;
     border: 1px solid black;
+}
+
+.content1{
+    display: flex;
+    background-color: blueviolet;
+    /* dồn 2 hàng bên trái , phải */
+    flex-wrap: wrap;
+
+    
 }
 
 /* =============================== */
@@ -65,13 +74,24 @@
     border: 1px solid black;
 }
 .content2{
+    height: 200px;
     display: flex;
     background-color: aqua;
     /* mặc định */
     /* flex-direction: row; */
 
     /* đảo ngược , đổi hướng */
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    /* flex-direction: row-reverse; */
+    /* justify-content: flex-end; */
+
+    /* xếp từng thanh ngang sắp trên cùng */
+    /* flex-direction: column; */
+
+    /* xếp từng thanh ngang sắp duoiws cùng */
+    /* flex-direction: column-reverse; */
+
+    /* kết hợp */
+    /* justify-content: flex-end; */
+
 
 }

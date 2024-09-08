@@ -1,0 +1,48 @@
+.container1 {
+    display: flex;
+    height: 100px;
+    background-color: cyan;
+
+    /* căn giữa */
+    /* justify-content: center;
+    align-items: center; */
+  }
+  
+  .fa-youtube {
+    /* căn chính giữa nhanh */
+    margin: auto;
+    font-size: 1.5rem;
+    color: red;
+  }
+  .container {
+    display: flex;
+
+    /* hướng trên xuống */
+    /* flex-direction: column; */
+    height: 150px;
+    background-color: rgb(254, 209, 165);
+  }
+  
+  .box1 {
+    background-color: red;
+  }
+  
+  .box2 {
+    background-color: blue;
+
+    /* cách nhanh p.tử này vs p.tử kia theo hướng mk quy định*/
+    /* margin-top: auto; */
+  }
+  
+  .box3 {
+    background-color: green;
+    
+     /* cách nhanh p.tử này vs p.tử kia */
+    margin-left: auto;
+  }
+  
+  .box4 {
+    background-color: purple;
+  }
+  
+  

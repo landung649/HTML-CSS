@@ -1,0 +1,84 @@
+.container {
+    height: 150px;
+    display: flex;
+    background-color: cyan;
+    /* dồn các p.tử thuộc con của cha lên trên  */
+    align-items: flex-start;
+  }
+  
+  .box {
+    background-color: blue;
+    border: 1px solid black;
+  }
+  
+  .box2,.box3 {
+    /* điều kiển mỗi t.phần theo mong muốn */
+    align-self: flex-end;
+  }
+  .box5{
+    /* điều chỉnh k.thước p.tử  */
+    flex-grow: 1;
+  }
+  /* ======================================== */
+  .container2 {
+    height: 150px;
+    display: flex;
+    background-color: cyan;
+    flex-direction: column;
+  }
+  
+  .boxb {
+    width: 30%;
+
+    /* t.hợp này chiều cao sẽ 30% do hướng của t.tính   flex-direction: column  */
+    /* flex-basis: 30%; */
+    background-color: blue;
+    border: 1px solid black;
+    flex-shrink: 3;
+  }
+
+  /* ============================================ */
+  .container3 {
+    height: 150px;
+    display: flex;
+    background-color: cyan;
+    /* flex-wrap: wrap; */
+    /* overflow: auto; */
+  }
+  
+  .boxa {
+    background-color: blue;
+    border: 1px solid black;
+    width: 30%;
+
+    /* chiều co dãn tối thiểu của item */
+    /* flex-shrink: 0; */
+
+      /* flex-basis: 100px; */
+  /* width: 100px; */
+  /* max-width: 200px; */
+  /* 
+  1. nếu max-width < flex-basis -> max-width
+  2. nếu max-width > flex-basis -> flex-basis
+   */
+  /* min-width: 200px; */
+
+  /* flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 100px; */
+
+  /* flex: 1 1 100px; */
+  /* flex: 1; */
+  }
+  
+  .box1a,
+  .box2a {
+    /* số 0 là co dãn lớn nhất , càng lớn hơn sẽ càng co hẹp lại */
+    flex-shrink: 0;
+  }
+  .box2a{
+
+    /* thay đổi thứ tự item */
+    order: 1;
+  }
+  
